@@ -10,6 +10,8 @@ ha_codeowners:
 ha_config_flow: true
 ha_domain: airos
 ha_platforms:
+  - binary_sensor
+  - diagnostics
   - sensor
 ha_integration_type: integration
 ha_quality_scale: bronze
@@ -19,8 +21,9 @@ Ubiquiti <abbr title="Ubiquity Internet Service Provider">UISP</abbr>-range of [
 
 A common use-case is establishing wireless <abbr title="Point-to-Point">PtP</abbr> or <abbr title="Point-to-Multi-Point">PtMP</abbr> links between buildings, remote sites, neighbours or even your shed. This is highly advantageous when traditional fiber-optic or copper network cabling is either impractical or the distance is too far for copper cabling. With <abbr title="Line-of-sight">LoS</abbr> between airOS devices, a stable and high-bandwidth "beam" can be established, eliminating any need for additional infrastructure. This can be an improvement over extending your WiFi coverage using meshing of Access Points, as meshing potentially reduces the capacity and performance of your WiFi network.
 
-There is currently support for the following plaforms within Home Assistant:
+There is currently support for the following platforms within Home Assistant:
 
+- [Binary sensor](#binary-sensor)
 - [Sensor](#sensor)
 
 This integration allows users to pull network metrics and statuses directly into their Home Assistant dashboards, enabling advanced automation, notifications, and comprehensive network oversight within their smart home ecosystem.
@@ -41,7 +44,8 @@ This integration only supports devices running airOS 8 and already configured us
 
 While there is no known limitation to which devices running airOS firmware version 8 are supported, success has been reported on:
 
-- Nanostation 5AC Loco (Loco5AC)
+- NanoBeam 5AC (NBE-5AC-Gen2)
+- NanoStation 5AC Loco (Loco5AC)
 - PowerBeam 5AC: 620 (PBE-5AC-620) and Gen2 (PBE-5AC-Gen2)
 
 Do you have a device that works? We’d love to hear [your experience](#feedback_section) so we can add it to this list!
@@ -65,8 +69,6 @@ For stations in particular, they can operate in either a 'Bridge' or 'Router' ro
 The choice between Bridge and Router mode depends on the network architecture and whether the device is intended to extend an existing network (Bridge) or create a new subnet (Router).
 
 ## Sensor
-
-This integration exposes the following sensor entities for your airOS devices:
 
 ### Network Role
 
