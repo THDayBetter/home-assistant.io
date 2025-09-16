@@ -138,9 +138,12 @@ Depending on the supported features of the camera ([see specifications of the ca
 - Floodlight turn on brightness+
 - Infrared light brightness
 - Volume (Camera)
+- Volume speak (Camera)
+- Volume doorbell (Camera)
 - Alarm volume (Home Hub)
 - Message volume (Home Hub)
 - Chime volume
+- Chime silent time
 - Guard return time
 - Motion sensitivity
 - PIR sensitivity
@@ -363,12 +366,12 @@ The following models have been tested and confirmed to work with a direct link t
 - C2 Pro*
 - [CX410](https://reolink.com/product/cx410/)
 - [CX810](https://reolink.com/product/cx810/)
-- [E1 Pro](https://reolink.com/product/e1-pro/) (only hardware version IPC_NT1NA45MP)
+- [E1 Pro](https://reolink.com/product/e1-pro/) (5MP models - hardware version IPC_NT1NA45MP - or newer†)
 - [E1 Zoom](https://reolink.com/product/e1-zoom/)
 - [E1 Outdoor](https://reolink.com/product/e1-outdoor/)
 - [E1 Outdoor PoE](https://reolink.com/product/e1-outdoor-poe/)
 - [E1 Outdoor Pro](https://reolink.com/product/e1-outdoor-pro/)
-- [Elite Floodlight WiFi](https://reolink.com/product/elite-floodlight-wifi/)
+- [Elite Floodlight WiFi](https://reolink.com/product/elite-floodlight-wifi/) (needs mains power, cannot be integrated when powered through USB)
 - [FE-P](https://reolink.com/product/fe-p/) (only "fisheye" or "5-in-1" view for the streams, not "dual panoramic", "quad", "cylindrical", "defished", or "hemispheric" view)
 - [FE-W](https://reolink.com/product/fe-w/) (only "fisheye" or "5-in-1" view for the streams, not "dual panoramic", "quad", "cylindrical", "defished", or "hemispheric" view)
 - [Lumus Pro](https://reolink.com/product/lumus-pro/)
@@ -380,7 +383,7 @@ The following models have been tested and confirmed to work with a direct link t
 - [RLC-510A](https://reolink.com/product/rlc-510a/)
 - RLC-511*
 - RLC-511W*
-- [RLC-511WA](https://reolink.com/product/rlc-511wa/)
+- [RLC-511WA](https://reolink.com/product/rlc-511wa/)*
 - RLC-520*
 - [RLC-520A](https://reolink.com/product/rlc-520a/)
 - RLC-522*
@@ -408,6 +411,7 @@ The following models have been tested and confirmed to work with a direct link t
 - [Reolink Duo WiFi](https://reolink.com/product/reolink-duo-wifi-v1/)
 - [Reolink Duo 2 WiFi](https://reolink.com/product/reolink-duo-wifi/)
 - **[Reolink Duo 3 PoE](https://reolink.com/product/reolink-duo-3-poe/)**
+- [Reolink Duo 3V PoE](https://reolink.com/product/reolink-duo-3v-poe/)
 - Reolink Duo Floodlight ([PoE](https://reolink.com/product/reolink-duo-floodlight-poe/) and [Wi-Fi](https://reolink.com/product/reolink-duo-floodlight-wifi/))
 - [Reolink Elite WiFi](https://reolink.com/product/elite-wifi/)
 - [Reolink Floodlight PoE and Wi-Fi*](https://reolink.com/product/reolink-floodlight/)
@@ -419,6 +423,8 @@ The following models have been tested and confirmed to work with a direct link t
 - **Reolink Video Doorbell ([Wi-Fi Black](https://reolink.com/product/reolink-video-doorbell-wifi/), [Wi-Fi White](https://reolink.com/product/reolink-video-doorbell-wifi/))**
 
 *These models are discontinued and not sold anymore, they will continue to work with Home Assistant.
+
+†Requires a [camera hardware version](https://support.reolink.com/hc/en-us/articles/900000638583-Introduction-to-the-Hardware-Version-of-Reolink-Cameras/) that supports remote access.  All 5MP or newer E1 Pro models (where the hardware version includes "5MP") meet this requirement.  Most sellers (including ReoLink) do not explicitly state the hardware version, so verify the resolution is 5MP or greater to ensure compatibility.
 
 ### Tested battery-powered models
 

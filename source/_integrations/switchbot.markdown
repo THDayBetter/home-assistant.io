@@ -190,7 +190,7 @@ The following devices are certified for Bluetooth:
 - [SwitchBot Roller Shade](https://www.switch-bot.com/products/switchbot-roller-shade)
 - [SwitchBot Lock Pro](https://www.switch-bot.com/products/switchbot-lock-pro)
 
-To see the list of SwitchBot Matter certified devices, visit the [SwitchBot Matter](switchbot_matter.markdown) page.
+To see the list of SwitchBot Matter-certified devices, visit the [SwitchBot Matter](/integrations/switchbot_matter/) page.
 
 ## Supported functionality
 
@@ -573,7 +573,7 @@ Features:
 
 ### Fans
 
-Fan entities are added for Battery Circulator Fan/Circulator Fan, Air Purifier, and Air Purifier Table
+Fan entities are added for Battery Circulator Fan/Circulator Fan
 
 #### Battery Circulator Fan/Circulator Fan
 
@@ -585,7 +585,11 @@ Features:
 - oscillate left and right
 - get battery level (Battery Circulator Fan only)
 
-#### Air Purifier
+### Air Purifiers
+
+Fan entities are added for Air Purifier, and Air Purifier Table.
+
+Air purifier currently supports three speed levels, which you can adjust by setting the mode.
 
 This is an encrypted device.
 
