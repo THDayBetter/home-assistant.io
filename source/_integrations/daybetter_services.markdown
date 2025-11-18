@@ -20,7 +20,7 @@ This integration is configured via the Home Assistant UI.
 1. Go to **Settings** > **Devices & Services**.
 2. Click **Add Integration**.
 3. Search for **DayBetter Services**.
-4. Enter your DayBetter user code.
+4. Enter your DayBetter user code (available on the **Me** page in the DayBetter app).
 5. The integration will automatically discover and add your devices.
 
 {% include integrations/config_flow.md %}
